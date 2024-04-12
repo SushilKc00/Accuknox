@@ -16,7 +16,7 @@ function ProtectedRoute() {
       navigate("/login");
     }
     const data = await AxiosCall({
-      Url: "http://localhost:8080/api/auth/user/authenticate",
+      Url: "/api/auth/user/authenticate",
       Method: "Get",
       Headers: {
         token: user.accessToken,
