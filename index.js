@@ -7,6 +7,6 @@ const PORT = process.env.PORT || 8080;
 connectDataBase();
 
 // SERVER STARTED AND LISTEN AT GIVEN PORT***********
-server.listen(8080, () => {
+server.listen(PORT, () => {
   console.log("Server is started at port 🥳🥳" + " " + PORT);
 });
