@@ -46,7 +46,7 @@ userSchema.methods.generateToken = async function () {
     },
     process.env.ACCESSJWTTOKEN,
     {
-      expiresIn: process.env.ACCESSJWTTOKENEXPIERY,
+      expiresIn: "1d",
     }
   );
 };
