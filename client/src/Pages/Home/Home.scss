@@ -1,0 +1,51 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+.home-main-container{
+    color: black;
+    .user-chat-container{
+        display: flex;
+
+        .side-bar-user{
+            flex: 1;
+            height: calc(100vh - 84px) ;
+            overflow: auto;  
+            .side-bar-container{
+                padding: 1rem 2rem;
+                input{
+                    width: 100%;
+                    outline: none;
+                    background-color: transparent;
+                    padding: 0.8rem 1rem;
+                    border-bottom: 1px solid rgb(147, 165, 237);
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                }
+                .user-container{
+                         display: flex;
+                         flex-direction: column;
+                         gap: 0.8rem;
+                         margin-top: 2rem;
+                    .img-container{
+                             img{
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 100%;
+                                object-fit: cover;
+
+                             }
+                    }
+                }
+            }
+        }
+
+        .chat-container{
+            flex: 4;
+            .chat-section{
+                padding: 1rem 2rem;
+                height: calc(100vh - 84px);
+            }
+        }
+    }
+}
